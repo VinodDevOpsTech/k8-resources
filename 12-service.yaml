@@ -6,7 +6,6 @@ metadata:
     project: roboshop
     environment: dev
 spec:
-  type: NodePort
   selector:
     project: roboshop
     environment: dev
