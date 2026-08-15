@@ -9,6 +9,7 @@ spec:
   type: NodePort
   selector:
     project: roboshop
+    environment: dev
     tier: frontend
     component: frontend
   ports:
