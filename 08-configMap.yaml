@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: nginx-config
+  name: catalogue
+  namespace: roboshop
 data:
-  project: roboshop
-  course: kubernetes
-  trainer: vinod
+
