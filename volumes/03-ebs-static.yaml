@@ -10,7 +10,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: ""
   csi:
-    driver: ://aws.com
+    driver: ebs.csi.aws.com
     volumeHandle: vol-007ad6c391414a7f7
 ---
 apiVersion: v1
@@ -34,7 +34,7 @@ spec:
     - name: nginx
       image: nginx
       volumeMounts:
-        - name: data-volume
+        - name: presistance-volume
           mountPath: /var/www/html
   volumes:
     - name: presistance-volume
